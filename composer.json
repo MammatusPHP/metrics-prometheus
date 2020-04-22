@@ -32,6 +32,11 @@
             "di": [
                 "etc/di/*.php"
             ]
+        },
+        "wyrihaximus": {
+            "broadcast": {
+                "has-listeners": true
+            }
         }
     },
     "autoload": {
