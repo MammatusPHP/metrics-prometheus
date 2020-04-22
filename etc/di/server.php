@@ -25,5 +25,5 @@ return [
             ])
         );
 
-    })->parameter('measure', get('config.mammatus.metrics.prometheus.middleware.metrics')),
+    })->parameter('measure', get('mammatus.metrics.prometheus.middleware.metrics')),
 ];
