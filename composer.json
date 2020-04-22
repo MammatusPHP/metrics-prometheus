@@ -1,0 +1,55 @@
+{
+    "name": "mammatus/metrics-prometheus",
+    "description": "\ud83c\udfb0 Metrics server using the prometheus format",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4",
+        "mammatus/life-cycle-events": "dev-master",
+        "react-inspector/http-middleware": "^1.0",
+        "react-inspector/http-middleware-printer": "^1.0",
+        "react-inspector/metrics": "^1.0",
+        "react-inspector/prometheus-printer": "^1.0",
+        "react/event-loop": "^1.1",
+        "react/http": "^0.8.6",
+        "react/promise": "^2.7",
+        "react/socket": "^1.4",
+        "wyrihaximus/broadcast-contracts": "dev-master",
+        "wyrihaximus/constants": "^1.5"
+    },
+    "require-dev": {
+        "clue/buzz-react": "^2.7",
+        "wyrihaximus/async-test-utilities": "^2.1",
+        "wyrihaximus/broadcast": "dev-master"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "php-di-definitions": {
+            "di": [
+                "etc/di/*.php"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Mammatus\\Metrics\\Prometheus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mammatus\\Tests\\Metrics\\Prometheus\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "composer normalize"
+        ],
+        "post-update-cmd": [
+            "composer normalize"
+        ]
+    }
+}
