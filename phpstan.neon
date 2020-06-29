@@ -1,8 +1,9 @@
 parameters:
+	ignoreErrors:
+		- '#Method getAttribute\(\) in anonymous class has parameter \$default with null as default value.#'
 	ergebnis:
 		classesAllowedToBeExtended:
-			- Mammatus\LifeCycleEvents\Promise\AbstractPromise
-			- Mammatus\Tests\LifeCycleEvents\Promise\AbstractPromiseTest
+			- Rx\Subject\Subject
 
 includes:
 	- vendor/wyrihaximus/async-test-utilities/rules.neon
