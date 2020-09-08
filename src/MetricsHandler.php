@@ -11,8 +11,7 @@ use RingCentral\Psr7\ServerRequest;
 
 /**
  * @Vhost("metrics")
- * @Bus("metrics")
- * @FetchEndpoint(path="/metrics", query=FetchMetrics::class, name="FetchMetrics")
+ * @FetchEndpoint(app="metrics", path="/metrics", query=FetchMetrics::class, name="FetchMetrics")
  */
 final class MetricsHandler
 {
